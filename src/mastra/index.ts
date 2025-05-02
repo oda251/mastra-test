@@ -1,6 +1,10 @@
-import { Mastra } from "@mastra/core";
-import { chatAgent } from "./agents/simple-chat";
+import {Mastra} from "@mastra/core";
+import {chatAgent} from "@/mastra/agents/gemma3-chat-agent";
+import {weatherAgent} from "@/mastra/agents/weather-agent";
 
 export const mastra = new Mastra({
-  agents: { chatAgent },
+    agents: {
+        chat: chatAgent,
+        weather: weatherAgent,
+    },
 });
