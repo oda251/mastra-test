@@ -9,4 +9,4 @@ interface RollDiceResponse {
   result: number;
 }
 
-export const rollDice = createTool<RollDiceOptions, RollDiceResponse>({
+export const rollDice = createTool<RollDiceOptions, RollDiceResponse>({})
