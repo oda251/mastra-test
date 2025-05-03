@@ -5,6 +5,7 @@ import {weatherTool} from "../tools/weather-tool";
 // https://www.npmjs.com/package/@ai-sdk/google
 const geminiFlash = google('gemini-2.0-flash', {
     structuredOutputs: true,
+    useSearchGrounding: false,
 });
 
 export const weatherAgent = new Agent({
